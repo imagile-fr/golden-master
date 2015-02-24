@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+  ServerName localhost
+  DocumentRoot /var/www/app/webroot
+  php_value error_log /vagrant/app/tmp/logs/error.log
+  <Directory /var/www/app/webroot>
+    Options FollowSymLinks
+    AllowOverride All
+  </Directory>
+</VirtualHost>

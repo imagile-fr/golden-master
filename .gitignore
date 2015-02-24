@@ -1,0 +1,10 @@
+.lockdown/received
+.vagrant
+app/Config/core.php
+app/Config/database.php
+app/Config/config.php
+app/Config/email.php
+app/tmp/**/*
+app/webroot/index.php
+app/webroot/test.php
+capybara-*.html
