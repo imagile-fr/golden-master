@@ -10,19 +10,17 @@ class PostsController extends AppController {
 	public $helpers = array('Text');
 
 	public function home() {
-		$posts = $this->Post->query(
-			"SELECT * FROM posts ORDER BY created DESC"
-		);
+		$posts = $this->Post->find('all', array(
+			'order' => 'created DESC'
+		));
 		$this->set('posts', $posts);
 	}
 
 	public function display($id) {
-		$post = $this->Post->query(
-			"SELECT * FROM posts WHERE id = $id LIMIT 1"
-		);
-		$posts = $this->Post->query(
-			"SELECT * FROM posts ORDER BY created DESC"
-		);
+		$post = $this->Post->findById($id);
+		$posts = $this->Post->find('all', array(
+			'order' => 'created DESC'
+		));
 		$this->set('post', $post);
 		$this->set('posts', $posts);
 	}
