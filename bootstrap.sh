@@ -22,7 +22,7 @@ CREATE DATABASE IF NOT EXISTS blog;
 "
 if [ -f /vagrant/app/config/sql/seeds/dump.sql ];
 then
-  mysql -u"root" -p"root" blog < /vagrant/app/config/sql/seeds/dump.sql
+  mysql -u"root" -p"root" blog < /vagrant/app/Config/sql/seeds/dump.sql
 fi
 
 find /vagrant -type f -name "*.default" | while read file
