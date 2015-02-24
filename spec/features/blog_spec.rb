@@ -7,4 +7,9 @@ describe "Blog", type: :feature do
     visit '/'
     page_html_should_be_identical_to_approved('home')
   end
+
+  it "shows an article" do
+    visit '/posts/display/1'
+    page_html_should_be_identical_to_approved('post')
+  end
 end
