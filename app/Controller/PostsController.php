@@ -18,14 +18,7 @@ class PostsController extends AppController {
 
 	public function display($id) {
 		$post = $this->Post->findById($id);
-		$posts = $this->Post->find('all', array(
-			'conditions' => array(
-				'NOT' => array(
-					'id' => $id
-				)
-			),
-			'order' => 'created DESC'
-		));
+		$posts = $this->Post->othersThan($id);
 		$this->set('post', $post);
 		$this->set('posts', $posts);
 	}
