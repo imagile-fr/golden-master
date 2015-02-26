@@ -123,3 +123,5 @@ On pourra continuer les mises à jour :
 - remplacer la syntaxe utilisée en PHP 5.4 pour les tableaux de `array()` à `[]`,
 - remplacer les sorties dans les templates de `<?php echo ...; ?>` à `<?= ?>`,
 - etc.
+
+Les textes des articles proviennent du site [Le Gorafi](http://www.legorafi.fr).
