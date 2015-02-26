@@ -11,7 +11,21 @@ sudo apt-get update
 sudo apt-get install -y php5-gd php5-curl
 sudo apt-get install -y libmysql-ruby libmysqlclient-dev
 
-cd /vagrant && bundle
+pushd /home/vagrant/.rbenv
+  git fetch && git pull
+popd
+
+pushd /home/vagrant/.rbenv/plugins/ruby-build
+  git fetch && git pull
+popd
+
+pushd /vagrant
+  rbenv install
+  rbenv rehash
+  gem install bundler
+  rbenv rehash
+  bundle
+popd
 rbenv rehash
 
 sudo cp /vagrant/templates/default /etc/apache2/sites-available/default
