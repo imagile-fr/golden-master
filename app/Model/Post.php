@@ -22,4 +22,15 @@ class Post extends AppModel {
 			),
 		),
 	);
+
+	public function othersThan($id) {
+		return $this->find('all', array(
+			'conditions' => array(
+				'NOT' => array(
+					'id' => $id
+				)
+			),
+			'order' => 'created DESC'
+		));
+	}
 }
