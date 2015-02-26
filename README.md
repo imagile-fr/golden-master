@@ -121,5 +121,5 @@ On approuve la nouvelle version avec `rake approve[home]`.
 On pourra continuer les mises à jour :
 
 - remplacer la syntaxe utilisée en PHP 5.4 pour les tableaux de `array()` à `[]`,
-- remplacer les sorties dans les templates de `<?php echo ...; ?>` à <?= ?>`,
+- remplacer les sorties dans les templates de `<?php echo ...; ?>` à `<?= ?>`,
 - etc.
