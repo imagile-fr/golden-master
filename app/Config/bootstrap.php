@@ -63,5 +63,3 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
-
-set_magic_quotes_runtime(true);
