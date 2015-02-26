@@ -68,7 +68,7 @@ sudo service apache2 restart
 mysql -u"root" -p"root" -e ";
 CREATE DATABASE IF NOT EXISTS blog;
 "
-if [ -f /vagrant/app/config/sql/seeds/dump.sql ];
+if [ -f /vagrant/src/config/seeds/dump.sql ];
 then
   mysql -u"root" -p"root" blog < /vagrant/src/config/seeds/dump.sql
 fi
