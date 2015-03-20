@@ -8,9 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise64-php-ruby-npm"
   # config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.vm.network :forwarded_port, guest: 80, host: 8080
-  config.vm.network :forwarded_port, guest: 1080, host: 10800
-  config.vm.network :forwarded_port, guest: 8765, host: 8765
+  config.vm.network :forwarded_port, guest: 80, host: 8080, auto_correct: true
+  config.vm.network :forwarded_port, guest: 1080, host: 10800, auto_correct: true
+  config.vm.network :forwarded_port, guest: 8765, host: 8765, auto_correct: true
 
   config.vm.network :private_network, ip: "192.168.33.10"
 
