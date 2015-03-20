@@ -14,7 +14,7 @@
 
 ### legacy-code
 
-Lancer `./reset.sh` pour revenir à l'état initial de l'application.
+Lancer `bash <(curl -s https://gist.githubusercontent.com/msadouni/4082c33a5323b22ee58e/raw/9bccae435efc77f80bbb363969d3ca44d649d5a4/reset.sh)` pour revenir à l'état initial de l'application.
 
 ## Création du Golden Master (_GM_)
 
