@@ -110,7 +110,7 @@ Cette version nécessite l'extension `intl`, on lance `./install_intl_extension.
 
 Le code est mis à jour pour CakePHP 3, on lance `./update_for_cakephp3.sh` pour l'installer.
 
-`rspec` montre que la troncation du texte des articles a changé. Après lecture de la documentation, on s'aperçoit que cela vient de la correction d'un bug dû aux accents et à l'UTF-8. Il n'est pas souhaitable de réintroduire ce bug, l'impact est faible et le affichage préférable car les mots ne sont plus coupés au milieu.
+`rspec` montre que la troncation du texte des articles a changé. Après lecture de la documentation, on s'aperçoit que cela vient de la correction d'un bug dû aux accents et à l'UTF-8. Il n'est pas souhaitable de réintroduire ce bug, l'impact est faible et l'affichage préférable car les mots ne sont plus coupés au milieu.
 
 ### cakephp3-3
 
